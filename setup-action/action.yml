@@ -1,0 +1,8 @@
+name: Setup Pre Action
+description: Setup Pre Action
+author: Nick Alteen <ncalteen@github.com>
+
+# This was previously a `pre` step in the original Node.js action
+runs:
+  using: node20
+  main: ../src/pre.js

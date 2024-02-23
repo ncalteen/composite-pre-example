@@ -1,0 +1,8 @@
+name: Main Action
+description: Main Action
+author: Nick Alteen <ncalteen@github.com>
+
+# This was previously a `main` step the original Node.js action
+runs:
+  using: node20
+  main: ../src/index.js

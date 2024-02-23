@@ -1,0 +1,20 @@
+name: Composite Action
+description: A composite action for demo purposes
+author: Nick Alteen <ncalteen@github.com>
+
+runs:
+  using: composite
+  steps:
+    # This was previously a `pre` step in a Node.js action
+    - name: Setup
+      uses: ./setup-action
+
+    # This was previously a `main` step in a Node.js action
+    - name: Main
+      uses: ./main-action
+#
+# The original action looked like this:
+# runs:
+#   using: node20
+#   main: src/index.js
+#   pre: src/setup.js
